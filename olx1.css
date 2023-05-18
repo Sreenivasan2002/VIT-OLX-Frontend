@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+/* ======================================  * Navbar * =========================================  */
+
+
+.navbar img{
+    width: 250px;
+}
+
+.campus_select{
+    width: 250px;
+}
+
+.select i{     /*i is icon (that down arrow)*/
+    font-size: 15px;
+    transition: all .5s;
+}
+
+.select{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: aliceblue;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-bottom: 10px;
+
+}
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: aliceblue;
+}
+.option p{
+    margin-left: 10px;
+    color: #0d0c0c;
+}
+.option i{
+    color:#839a9c ;
+}
+.option_box{
+    box-shadow: 0 0 10px rgb(73, 70, 70);
+    background-color: white;
+    display: none;
+}
+
+.hidden{
+    display: block;
+
+}
+.roted{
+    transform: rotate(180deg);
+}
+
+
+
+.search-box{
+    display: flex;
+}
+.search-box i{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.searchclass{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 6px 0 0 6px;
+
+}
+
+#eng_tag{
+    cursor: pointer;
+    font-size: 18px;
+}
+.hin_eng{
+    background-color: aliceblue;
+    box-shadow: 0 0 10px grey;
+    width: 130px;
+    display: none;
+}
+.hin_eng li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.hin_eng li:hover{
+    background-color: aliceblue;
+    
+}
+
+.display_div{
+    display: block;
+}
+
+.message i{
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: red;
+  }
+  
+  /* When you mouse over the container, fade in the overlay icon*/
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* When you move the mouse over the icon, change color */
+  .fa-user:hover {
+    color: #eee;
+  }
+
+  .your_logo{
+    height: 104px;
+    width: 140px;
+
+  }

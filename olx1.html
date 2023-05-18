@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="olx1.css">
+    <title>OLX-VIT</title>
+</head>
+<body>
+    <!-- ======================================  * Navbar * ==================================== -->
+    <div class="header">
+        <div class="navbar">
+            <img src="olx_img.png" alt="">
+
+            <div class="campus_select" id="campus">
+                <div class="select">
+                    <p id="text">Select your Campus</p>
+                    <i class="fa-solid fa-arrow-down-long" id="moving"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Vellore')">
+                    <i class="fa-regular fa-location-dot"></i>
+                    <p>Vellore </p>
+                    </li>
+
+                    <li class="option" onclick="myfunction('Chennai')">
+                        <i class="fa-regular fa-location-dot"></i>
+                        <p>Chennai </p>
+                        </li>
+
+                        <li class="option" onclick="myfunction('AP')">
+                            <i class="fa-regular fa-location-dot"></i>
+                            <p>AP </p>
+                            </li>
+                        
+                            <li class="option" onclick="myfunction('Bhopal')">
+                                <i class="fa-regular fa-location-dot"></i>
+                                <p>Bhopal</p>
+                                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!------ search box-------------------------------------------------------- -->
+    <div class="search-box">
+        <input type="text" class="searchclass" id="searchid" placeholder="Find Books, Gadgets, and more....">
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+    </div>
+    <!-- search box-------------------------------------------------------- -->
+
+
+<!------ Language-------------------------------------------------------- -->
+
+        <div class="language">
+            <p id="eng_tag"> English </p>
+
+            <ul class="hin_eng">
+                <li onclick="languageolx('English')"> English </li>
+                <li onclick="languageolx('हिन्दी')">हिन्दी</li>
+            </ul>
+        </div>
+
+<!------ Language-------------------------------------------------------- -->
+
+
+<!------ Message and remainder-------------------------------------------------------- -->
+
+    <div class="message">
+        <i class="fa-regular fa-comment"></i>
+        <i class="fa-regular fa-bell"></i>
+
+
+    </div>
+<!------ Message and remainder-------------------------------------------------------- -->
+
+<!------ profile Logo-------------------------------------------------------- -->
+<div class="your_logo">
+    <div class="my_img" id="my_img">
+        <img src="profile pic.jpeg" alt="my image..">
+    </div>
+
+</div>
+
+
+
+
+<!------ profile Logo-------------------------------------------------------- -->
+
+    
+
+<script>
+    let campus = document.getElementById('campus');
+    let moving = document.getElementById('moving'); 
+    let text = document.getElementById('text');
+    let list = document.getElementById('list');
+
+    campus.addEventListener('click', () =>{
+        list.classList.toggle('hidden')
+        moving.classList.toggle('roted')
+    });
+
+    function myfunction(sreeni){
+        text.innerHTML=sreeni; 
+    }
+
+let eng_tag = document.getElementById('eng_tag');
+let hin_eng = document.querySelector('.hin_eng');
+let language = document.querySelector('.language');
+
+language.addEventListener('click', () =>{
+    hin_eng.classList.toggle('display_div')
+});
+function languageolx(anyone){
+    eng_tag.innerHTML = anyone;
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
